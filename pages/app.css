@@ -1,0 +1,160 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    background: linear-gradient(-45deg, #dc52ee, #e73c7e, #7919d3, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  /* #NiceAndSimple: Main - margin:auto */
+  
+  
+  a {
+    color: gray;
+    transition: all 0.2s;
+  }
+  a:hover {
+    opacity: 0.6;
+  }
+  a:active {
+    opacity: 1;
+  }
+
+  a.mr-4 {
+    padding-left: 1em;
+    font-weight: 900;
+    padding-top: 1em;
+    margin-bottom: 3em;
+      }
+
+  a.mr-6 {
+    width: 120px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: rgb(139, 54, 218);
+    font-weight: 900;
+    padding-top: .75em;
+    background: #171718;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+a.mr-6:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+a.mr-6:active {
+    color: #171718
+}
+
+a.mr-6:active:after {
+    background: transparent;
+}
+
+a.mr-6:hover:before {
+    opacity: 1;
+}
+
+a.mr-6:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #171718;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+    
+}
+
+
+   
+    
+
+  
+
+  nav.navbar {
+    padding-left: 40em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: .5em;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #292A2C;
+    height: 100vh;
+  }
+  
+  .connect {
+    background-color: #f58613;
+    border-style: none;
+    border-radius: 100px;
+    width: 200px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 #000000;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+  
+  .connect:hover {
+    background-color: #ce700b;
+  }
+
+ 
